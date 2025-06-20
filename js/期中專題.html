@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/_css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>猜數字遊戲</title>
+    <link rel="icon" href="./照片/數字圖.jpg">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        div h1 {
+            color: black;
+            margin-top: 20px;
+        }
+
+        .answer {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        label {
+            margin-top: 20px;
+        }
+
+        p {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="p-3 bg-secondary">
+        <div class="p-2 bg-info align-self-md-baseline">
+
+            <div class="container">
+
+                <h1 class="">猜數字遊戲</h1>
+                <ul id="number" class="list-group">
+                    <li class="list-group-item">請從1~100中挑選一個數字</li>
+                    <li class="list-group-item">選擇後 會提示高或低 猜到的人就贏了</li>
+                </ul>
+
+                <div class="form-group task-description">
+                    <label for="textBox1">輸入數字</label>
+                    <input type="text" id="textBox1" value="" class="form-control" />
+                </div>
+                <button type="button" id="okButton" class="btn btn-secondary">
+                    執行
+                </button>
+
+                <p class="answer">答案提示</p>
+                <div id="report" class="answer"></div>
+            </div>
+            <div>
+                <button id="restartButton" class="btn btn-primary ">再玩一局</button>
+
+            </div>
+        </div>
+
+        <script>
+
+            $(document).ready(function () {
+
+                var answer = Math.floor(Math.random() * 100) + 1;
+
+
+                $("#okButton").on('click', function () {
+                    var userKeyin = textBox1.value;
+                    var prompt = "";
+                    if (userKeyin > 100 || userKeyin < 1) {
+                        prompt = "請輸入1~100以內的數字";
+
+                    }
+                    else {
+                        if (userKeyin == answer) {
+                            prompt = "答對囉!";
+                        }
+
+                        else if (userKeyin > answer) {
+                            prompt = "比 " + userKeyin + " 小";
+                        }
+                        else {
+                            prompt = "比 " + userKeyin + " 大";
+                        }
+                    }
+                   
+                    
+
+                    $('#report').html(prompt);
+                });
+
+                $("#restartButton").on('click', function () {
+                    answer = Math.floor(Math.random() * 100) + 1;
+
+                    $("#textBox1").val('');
+                    $('#report').html('');
+
+                    alert("遊戲重新開始！請再次輸入一個數字");
+                });
+
+            });
+        </script>
+        <script src="./js/_js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
