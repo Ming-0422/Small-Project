@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撲克牌</title>
+    <link rel="stylesheet" href="./css/_css/bootstrap.css">
+    <script src="./js/_js/bootstrap.bundle.js"></script>
+    <link rel="icon" href="./img/1.png">
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            width: 500px; height: 400px; ;
+        }
+
+        dl {
+            background: url(./img/B.jpg)no-repeat;
+            background-size: cover;
+            color: white;
+            border-radius: 10px;
+            opacity: 1 ;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+
+    <div class="d-flex justify-content-center p-3 bg-dark">
+        <div class="p-2">
+            <button type="button" class="btn btn-danger"><a href="#origin">撲克牌的起源</a>
+            </button></div>
+
+        <div class="p-2 "><a class="dropdown-item"></a>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">遊戲介紹</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#type1">大老二</a></li>
+                <li><a class="dropdown-item" href="#type2">德州撲克</a></li>
+                <li><a class="dropdown-item" href="#type3">21點</a></li>
+                <li><a class="dropdown-item" href="#type4">十三支</a></li>
+                <li><a class="dropdown-item" href="#rule5">鬥地主</a></li>
+            </ul>
+        </div>
+        <div class="p-2 ">
+            <a class="dropdown-item"></a>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">遊戲規則</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#rule1">大老二</a></li>
+                <li><a class="dropdown-item" href="#rule2">德州撲克</a></li>
+                <li><a class="dropdown-item" href="#rule3">21點</a> </li>
+                <li><a class="dropdown-item" href="#rule4">十三支</a></li>
+                <li><a class="dropdown-item" href="#rule5">鬥地主</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="apple" class="carousel slide " data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#apple" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#apple" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#apple" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <center>
+            <div class="carousel-inner p-5 ">
+                <div class="carousel-item active">
+                    <img src="img/poker.webp">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/2.webp">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/21.jpg">
+                </div>
+        </center>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#apple" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+    </div>
+
+    <dl>
+
+        <h4 id="origin">撲克牌的起源</h4>
+        <dd class="fw-bold">
+            撲克牌花色以法國的版本最為通行。四種花色分別為黑桃♠（piques，又名葵扇）、紅心♥（cœurs，又名紅桃）、梅花♣（trèfles，又名草花）、方塊♦（carreaux，又名菱形、鑽石、紅磚、磚塊、階磚或方片，中國川渝地區稱為「巴片」），黑桃和梅花為黑色，紅心和方塊為紅色。每種花色各十三支，為數字一到十三，一到十的牌以花色圖案數代表，而十一、十二、十三用人頭牌J（Jack［騎士］）、Q（Queen［皇后］）、K（King［國王］）代表，而一通常被標示為A，可稱呼為1、A或Ace。現代，花色圖案的數值通常會直接標示在左上角，為了方便坐在桌子對面的對手玩家觀看，右下角也會有一個上下倒轉的數字。不過因為這樣所以人頭牌的圖案也跟著變成了上下兩個人頭相對的詭異圖像。
+        </dd>
+        <br>
+        <h4>遊戲玩法</h4>
+        <h4 id="type1">大老二</h4>
+        <dd class="fw-bold">遊戲準備：
+            撲克牌：使用一副52張的標準撲克牌，不包括大小王。
+            玩家人數：遊戲通常由2至6人參與，每位玩家會被發13張牌。
+            出牌規則：
+
+            首位玩家：最先出牌的玩家必須出一張單牌或牌型，並且可以是任意一張。
+            接下來的每位玩家必須出與前一位玩家相同牌型的牌，並且牌的點數必須大於前一位玩家出牌的點數。如果沒有更大的牌，則選擇「過」。
+            過牌：若玩家無法或不願意出牌，則選擇「過」。一旦選擇過牌，該玩家就無法在這一輪繼續出牌，直到該輪結束。
+
+            贏的條件：
+
+            第一個出完所有牌的玩家獲勝。
+            其他玩家依次根據出牌的情況進行排序，直到所有玩家都出完牌。</dd>
+        <br>
+        <h4 id="type2">德州撲克</h4>
+        <dd class="fw-bold">
+            玩家人數：
+
+            一場德州撲克通常有2到10名玩家參與。
+            發牌與盲注：
+
+            每位玩家會被發兩張面朝下的私牌，
+            在發牌之前，會有兩位玩家支付盲注（小盲注和大盲注）來開始遊戲。這是強制性下注，為了保證每輪遊戲有一定的獎池。
+            小盲注：由發牌者左側第一位玩家支付。
+            大盲注：由發牌者左側第二位玩家支付，金額通常是小盲注的兩倍。
+            遊戲輪次： 德州撲克遊戲分為四輪下注，每一輪的流程如下：
+
+            第一輪：預發牌（Pre-flop）：
+            每位玩家發兩張底牌，發牌結束後，進行第一輪下注。從大盲注玩家的左側玩家開始，玩家可以選擇以下操作：
+            跟注（Call）：跟隨大盲注的下注金額。
+            加注（Raise）：提高下注金額。
+            棄牌（Fold）：丟掉自己的牌並退出該輪遊戲。
+            第二輪：翻牌（The Flop）：
+            發完底牌後，會發出三張公共牌，稱為“翻牌”，這三張牌是面朝上的，所有玩家都可以使用這些公共牌來組合最好的手牌。接下來進行第二輪下注。
+            玩家仍然可以選擇跟注、加注或棄牌。
+            第三輪：轉牌（The Turn）：
+            在翻牌後，會再發一張公共牌，稱為“轉牌”。現在場上總共有四張公共牌，玩家可以用這四張牌和兩張底牌組成最好的手牌。接下來進行第三輪下注。
+            第四輪：河牌（The River）：
+            最後，發出最後一張公共牌，稱為“河牌”。此時場上會有五張公共牌，玩家必須選擇如何利用這些牌與底牌組成最強的五張牌組合。接下來進行最後一輪下注。
+            比牌：
+
+            在最後一輪下注結束後，若有多於一位玩家仍然在比賽中，會進行比牌階段，即每位玩家公開底牌，並根據五張牌（兩張底牌和五張公共牌）組合出最強的手牌，從而決定勝者。
+        </dd>
+        <br>
+        <h4 id="type3">21點</h4>
+        <dd class="fw-bold">21點通常使用 1 至 8 副撲克牌，每副牌有52張牌。
+            每張牌的點數如下：
+            數字牌（2到10）按其本身的數字計算點數。
+            J、Q、K（王后、國王、杰克）都算10點。
+            A（王牌）可以算1點或11點，玩家可以根據需要選擇其值，通常選擇11點有助於接近21點，但如果再加上11點會超過21點，則A算1點。</dd>
+        <br>
+        <h4 id="type4">十三支</h4>
+        <dd class="fw-bold">組牌規則
+            每一組牌必須符合一定的點數規則，通常為：
+            前三組（前牌）：這一組的牌必須是最弱的，通常只要能形成合法的牌型即可。
+            中牌：中牌應該是兩組牌中較為強勁的一組。
+            後牌：後牌必須是最強的一組，它必須比前和中牌的點數更高，否則會被視為無效。</dd>
+        <br>
+        <h4 id="type5">鬥地主</h4>
+        <dd class="fw-bold">在發牌後，農民（兩個非地主的玩家）可以選擇是否出價爭奪地主身份。出價的方式如下：
+
+            1分：表示願意擔任地主。
+            2分：表示更高的出價，爭取地主身份。
+            3分：為最高出價，意味著玩家願意成為地主，並且對手不能再繼續出價。
+            若出現多人同樣出價，則由系統根據出價進行確定，通常由後面的玩家選擇是否同意接納並進行下一輪。
+
+            當地主確定後，地主玩家會額外獲得3張牌。</dd>
+        <br>
+        <hr>
+        <h4>遊戲規則</h4>
+        <br>
+        <h4 id="rule1">大老二</h4>
+        <dd class="fw-bold">出牌順序：
+
+            遊戲由持有 3♣（梅花三） 的玩家開始，接下來按順時針方向出牌。
+            每位玩家輪流出牌，出牌時必須符合上一手牌的花色或點數。
+            出牌方式：
+
+            玩家可以出單張、對子、三張、順子、同花順等組合。
+            如果前一位玩家出的牌無法被比過，後面的玩家可以選擇跳過。
+            牌的大小比拼：大的牌可以壓過小的牌。例如，單張牌的大小以點數為準，從 3 到 2 逐漸增大；對子、三張、順子等組合依照牌型大小進行比較。
+            牌型大小：
+
+            單牌：按點數大小，比較大小從 3 到 2（3 最小，2 最大）。
+            對子：兩張相同點數的牌，大小按點數比較。
+            三張：三張相同點數的牌，大小按點數比較。
+            順子：五張連續點數的牌，大小按最大牌的點數決定。
+            葫蘆:三張相同點數的牌+兩張相同點數的牌，比三張相同點數牌的大小。
+            鐵支:四張相同點數的牌+一張任何一張牌，比四張相同點數牌的大小。
+            同花順：五張同花色且連續點數的牌，按最大牌點數來比較大小。</dd>
+        <br>
+        <h4 id="rule2">德州撲克</h4>
+        <dd class="fw-bold">玩家的目標是利用底牌和公共牌組合出最佳的五張牌。以下是德州撲克的牌型，從最強到最弱：
+
+            皇家同花順（Royal Flush）：
+
+            同一花色的A, K, Q, J, 10（最強的牌型）。
+            同花順（Straight Flush）：
+
+            同一花色的五張連續牌，如9♠8♠7♠6♠5♠。
+            四條（Four of a Kind）：
+
+            四張相同點數的牌，例如四張A（A♠ A♦ A♣ A♥）。
+            葫蘆（Full House）：
+
+            三張相同點數的牌加一對，例如三張7和一對J（7♠7♦7♣J♠J♦）。
+            同花（Flush）：
+
+            五張相同花色的牌，但不需要連續，例如5♠9♠J♠K♠A♠。
+            順子（Straight）：
+
+            五張連續的牌，不同花色，例如10♠9♦8♣7♠6♥。
+            三條（Three of a Kind）：
+
+            三張相同點數的牌，例如三張Q（Q♠Q♦Q♣）。
+            兩對（Two Pair）：
+
+            兩對相同點數的牌，例如9♠9♦K♣K♥。
+            一對（One Pair）：
+
+            兩張相同點數的牌，例如J♠J♦。
+            高牌（High Card）：
+
+            當沒有其他組合時，牌面最大的牌即為高牌。例如，若手牌為K♠10♦9♣8♠7♣，則K為高牌。</dd>
+        <br>
+        <h4 id="rule3">21點</h4>
+        <dd class="fw-bold">發牌： 每位玩家和莊家都會收到兩張牌，玩家的牌通常是面朝上的，而莊家的其中一張牌是面朝上的，另一張是面朝下的。
+            玩家回合：
+            玩家可以選擇“要牌”（Hit）來拿更多牌，或選擇“停牌”（Stand）來結束回合。
+            如果玩家的點數超過21點，則“爆掉”（Bust），即為輸。
+            其他選項還包括“雙倍下注”（Double Down），即將賭注加倍並再要一張牌，或“分牌”（Split），若兩張牌相同，可以分成兩手牌，繼續遊戲。
+            莊家回合：
+            莊家必須遵守固定規則，通常是在總點數小於17時必須繼續要牌，一旦總點數達到17點或以上，則停止要牌。
+            如果莊家的點數超過21點，也會爆掉，玩家獲勝。</dd>
+        <br>
+        <h4 id="rule4">十三支</h4>
+        <dd class="fw-bold">比牌與勝負判定
+            遊戲的勝負是根據每位玩家所組成的三副牌與其他玩家進行比拼，主要有兩種評分方式：
+            比較三副牌的點數：每副牌根據點數比較，玩家需盡量將自己的牌組成強的牌型。
+            總分：每一副牌的比較結果會給予分數，總分較高的玩家獲勝。</dd>
+        <br>
+        <h4 id="rule5">鬥地主</h4>
+        <dd class="fw-bold">輪流出牌：由地主先出牌，之後玩家輪流出牌，出牌的順序按逆時針方向進行。
+
+            出牌類型：鬥地主中的出牌組合有多種，常見的有：
+
+            單牌：一張獨立的牌。
+            對子：兩張相同點數的牌（例如兩張3）。
+            順子：五張以上連續的數字牌（例如3、4、5、6、7）。
+            三張：三張相同點數的牌。
+            三帶一：三張相同點數的牌加上一張單牌或一對。
+            炸彈：四張相同點數的牌，是最強的牌型。
+            王炸：一張大王和一張小王，這是最強的牌型，無論對手出什麼牌，王炸都可以壓過。
+            壓牌規則：在遊戲中，每一輪出牌時，玩家必須出比上一輪更大的牌型。比如，如果上一位玩家出了一張單牌3，那麼下一位玩家必須出一張比3大的牌（例如4、5等）。
+
+            若無法出牌，則玩家可以選擇不出。
+            目標：地主需要先出完自己的牌，並且阻止農民組合牌來對抗他。農民需要合作，協作阻止地主先出完牌。
+            勝負判定：
+            若地主先出完牌，地主獲勝。
+            若農民中有任一一方先出完牌，那麼農民獲勝。
+            如果地主成功出完牌，地主贏。
+        </dd>
+    </dl>
+
+    </div>
+</body>
+
+</html>
